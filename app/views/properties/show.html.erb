@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>物件名:</strong>
+  <%= @property.property_name %>
+</p>
+
+<p>
+  <strong>賃料:</strong>
+  <%= @property.rent %>
+</p>
+
+<p>
+  <strong>住所:</strong>
+  <%= @property.address %>
+</p>
+
+<p>
+  <strong>築年数:</strong>
+  <%= @property.age %>
+</p>
+
+<p>
+  <strong>備考:</strong>
+  <%= @property.remark %>
+</p>
+
+<%= link_to '物件編集', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>
